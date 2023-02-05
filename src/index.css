@@ -7,21 +7,66 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+
   overflow-x: hidden;
-  color: #5D5D5D;
+  font-family: 'Inter', sans-serif !important;
+
   font-style: normal;
 }
 
+p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #5D5D5D !important;
+  font-weight: 400 !important;
+  
+}
+
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: 'Playfair Display', sans-serif !important;
-  color: #2E2E2E;
-  font-weight: 900,
+  color: #2E2E2E !important;
+  font-weight: 900;
+  font-style: normal
+}
+
+
+h2 {
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #2E2E2E !important;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #2E2E2E !important;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2E2E2E !important;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  margin: 8% 0 3% 0;
+  color: #2E2E2E !important;
 }
 
 nav {
@@ -83,7 +128,7 @@ select {
   font-weight: 500;
   font-size: 15px;
   color: #FFFFFF;
-  margin: 0 10px;
+  margin: 0;
 }
 
 #navlinks button:hover {
@@ -130,6 +175,8 @@ select {
 }
 
 .landing-text h1 span {
+  font-family: 'Playfair Display', sans-serif !important;
+  font-weight: 900;
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
@@ -155,18 +202,6 @@ select {
   animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.landing-text p,
-col p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  width: 523px;
-  letter-spacing: -0.01em;
-  margin-top: 8%;
-
-}
-
-
 
 .landingimage {
   width: 750px;
@@ -177,11 +212,9 @@ col p {
   background-repeat: no-repeat;
 }
 
-.landing-page .row img,
-.nationality img,
-.coming-soon .row img {
+.landing-page .row img {
   width: 150px;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .landing-page .row img:hover,
@@ -193,13 +226,14 @@ col p {
 }
 
 .nationality {
-  height: 180px;
+  height: 150px;
   background: #FFF5DD;
 }
 
 .services {
   height: auto;
   margin: 5%;
+
 }
 
 .list-of-services {
@@ -208,6 +242,7 @@ col p {
 }
 
 .box {
+  text-align: center;
   width: 420px;
   height: 420px;
   background: #FAFAFA;
@@ -232,112 +267,18 @@ col p {
   width: 50px
 }
 
-h3 {
-  font-size: 28px;
-  font-family: 'inter' !important;
-}
-
-.services p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-
-  font-family: 'playfair-display';
-}
-
-.how-we-work {
-  /* width: 1597px; */
-  /* height: 900px; */
-  height: auto;
-  padding: 5% 0;
-  background: #FAFAFA;
-}
-
-.customers-steps ul p {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #2E2E2E;
-}
-
-
-
 
 .customer-restaurants {
-  padding: 88px 0;
-  background: #FFF5DD;
-}
-
-.money,
-.location,
-.rest-icon li div p {
-  width: auto !important;
-}
-
-.customer-restaurants img {
-  width: 700px;
-}
-
-.chef-image-one,
-.landingimage.one {
-  display: none;
-}
-
-.customer-hr {
-  left: 62px;
-  width: 369px;
-  height: 0px;
-  border: 1px dashed #FF7011;
-  transform: rotate(90deg);
-  position: absolute;
-}
-
-hr {
-  width: 380px;
-  height: 0px;
-  border: 1px dashed #FF7011;
-  transform: rotate(90deg);
-  position: absolute;
-  right: 553px;
-
-}
-
-.rest-icon {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-  z-index: 1;
-}
-
-.rest-icon li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10% 0;
-}
-
-.rest-icon li .steps {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 71px;
-  height: 71px;
-  border-radius: 50px;
-  background: #F4F4F4;
-  border: 1px dashed #FF7011;
-  margin-right: 60px;
+  padding: 3% auto;
+  padding: 3% 10.5%;
 }
 
 
-
-
-.rest-icon li img {
-  width: 50px;
-  height: 50px;
+.rest-icon li p {
+  font-size: 16px !important;
+  line-height: 19px !important;  
+  color: #5D5D5D;
+  width: 450px;
 }
 
 .footer {
@@ -346,16 +287,6 @@ hr {
   height: 250px;
 
   background: #FAFAFA;
-}
-
-.coming-soon {
-  /* padding: 100px 538px; */
-  background: #FFFFFF;
-
-}
-
-.coming-soon p {
-  font-size: 20px;
 }
 
 .footer-content {
@@ -371,12 +302,12 @@ hr {
   width: 800px;
 }
 
-.base-footer {
+/* .base-footer {
   display: flex;
   align-items: center;
   width: 105%;
-  /* margin: 10px auto; */
-}
+  margin: 10px auto;
+} */
 
 .base-footer ul li {
   margin: 0 20px;
@@ -393,242 +324,11 @@ hr {
 
 /* responsiveness */
 
-/* @media only screen and (max-width: 1920px) {
-  
-  .landing-page {
-    justify-content: space-between !important;
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-
-  .landingimage {
-    width: 800px;
-    height: 650px;
-  }
-
-  .landing-text h1 {
-    font-size: 100px;
-  }
-
-  .nationality {
-    height: 250px;
-  }
-
-  .landing-page .row img,
-  .nationality img,
-  .coming-soon .row img {
-    width: 250px;
-  }
 
 
-  .landing-text p,
-  col p {
-    font-size: 30px;
-    line-height: normal;
-    width: 750px;
-  }
+@media only screen and (max-width: 1440px) {}
 
-  h2 {
-    font-size: 55px !important;
-  }
-
-  .box {
-    width: 500px;
-    height: 500px;
-  }
-
-  .services p {
-    font-size: 32px;
-    line-height: 35px;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  .customer-restaurants img {
-    width: 600px;
-  }
-
-  .cust-rest p ,  #root .chef-image.one  p{
-    font-size: 30px !important;
-    line-height: normal !important;
-  }
-
-  .rest-icon li .steps {
-    margin-right: 49px;
-  }
- 
-  #root ul li p span{
-    font-size: 35px !important;
-  }
-
-  #root div ul li p.location, #root div ul li p.money, #root div ul li p:nth-child(2) {
-    width: 600px !important;
-  }
-  .customer-hr {
-    left: -36px;
-    width: 557px;
-  }
-  hr {
-    width: 564px;
-    right: 543px;
-}
-
-  
-
-  
-} */
-
-@media only screen and (max-width: 1440px) {
-  .landing-text h1 {
-    font-size: 70px;
-  }
-
-  nav {
-    padding: 25px 95px;
-  }
-
-  .landingimage {
-    width: 650px;
-    height: 550px;
-  }
-
-  #navlinks button {
-    margin: 0 !important;
-  }
-
-  .box {
-    width: 400px;
-    height: 400px;
-  }
-
-  .customer-restaurants img {
-    width: 500px;
-  }
-
-  /* .money,
-  .location, .rest-icon li div p{
-    width: auto !important;
-  } */
-
-  .rest-icon li {
-    margin: 5% 0;
-  }
-
-  .customer-hr {
-    left: 23px;
-    width: 259px;
-  }
-
-  hr {
-    width: 278px;
-    right: 531px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .landingimage {
-    width: 540px;
-    height: 500px;
-    background-size: contain;
-
-  }
-  .landing-text h1 {
-    font-size: 60px;
-  }
-
-  .customer-hr {
-    left: -36px;
-    width: 280px;
-  }
-
-
-
-  hr {
-    right: 455px;
-  }
-
-}
-
-@media only screen and (max-width: 1024px) {
-
-  #navlinks button {
-    margin: 0;
-  }
-
-  .landing-page {
-    margin-top: 5%;
-    padding: 5% 10% 0 10%;
-  }
-
-  .landing-text h1 {
-    font-size: 55px;
-  }
-
-  .landing-text p,
-  col p {
-    width: 401px;
-  }
-
-  .landing-text h1 {
-    font-size: 45px;
-  }
-
-  .landingimage {
-    width: 426px;
-    height: 393px;
-
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  .box {
-    width: 415px;
-    height: 400px;
-    margin: 60px 10px;
-    padding: 30px 15px;
-  }
-
-  .customer-restaurants img {
-    width: 372px;
-  }
-
-  .rest-icon li {
-    margin: 5% 0;
-  }
-
-  .rest-icon li .steps {
-    margin-right: 30px;
-  }
-
-  .customer-restaurants {
-    padding: 30px 0;
-  }
-
-  .money,
-  .location,
-  .rest-icon li div p {
-    width: 250px !important;
-  }
-
-  .customer-hr {
-    left: -10px;
-    width: 280px;
-  }
-
-
-
-  hr {
-    right: 250px;
-  }
-
-  .coming-soon .row img {
-    width: 200px !important;
-  }
-}
+@media only screen and (max-width: 1280px) {}
 
 
 @media only screen and (max-width: 769px) {
@@ -651,7 +351,7 @@ hr {
 
   }
 
-  #navlinks.active{
+  #navlinks.active {
     right: 0px;
   }
 
@@ -659,12 +359,14 @@ hr {
     display: block;
     font-size: 40px;
   }
+
   select {
     font-size: 22px;
     margin: 10px 0;
     background: transparent;
     padding: 0 40px;
   }
+
   #navlinks button {
     padding: 16px 24px;
     width: 198px;
@@ -677,596 +379,4 @@ hr {
     color: #FFFFFF;
     margin: 100px 0 !important;
   }
-
-  .landing-page {
-    flex-direction: column !important;
-    padding: 0;
-  }
-
-  .list-of-services .row {
-    flex-direction: column !important;
-  }
-
-  .landing-text {
-    text-align: center;
-
-    margin: 20% 0 5% 0;
-    /* padding: 50px 0; */
-  }
-
-  .landing-text p,
-  col p {
-    font-size: 16px;
-    padding: 0 46px;
-    width: auto;
-  }
-
-  .landing-text h1 {
-    font-size: 70px;
-    margin-bottom: 5%;
-  }
-
-  .landingimage,
-  .chef-image {
-    display: none;
-  }
-
-  .landingimage {
-    width: 400px;
-    height: 360px;
-    margin: 0 auto;
-    background-size: contain;
-  }
-
-  .chef-image-one,
-  .landingimage.one {
-    display: block;
-
-  }
-
-  /* .landingimage img {
-    width: 530px;
-  } */
-
-  .landing-text p,
-  col p {
-    font-size: 23px;
-    margin-top: 3%;
-  }
-
-  .landing-page .row img,
-  .nationality img,
-  .coming-soon .row img {
-    width: 182px;
-  }
-
-  .rest-icon li div.aos-init.aos-animate p span {
-    font-size: 18px !important;
-  }
-
-  .customer-restaurants {
-    padding: 50px 35px;
-  }
-
-  .rest-icon li {
-    margin: 5% 0;
-  }
-
-  .customer-hr {
-    left: -6px;
-  }
-
-  hr {
-    left: -2px;
-  }
-
-  .customer-restaurants img {
-    width: 425px;
-  }
-
-  .rest-icon li .steps {
-    width: 71px;
-    height: 71px;
-    margin-right: 40px;
-  }
-
-  .cust-rest h3,
-  .cust-desc {
-    text-align: center;
-    margin: 5% 0;
-  }
-
-  .money,
-  .location,
-  .rest-icon li div p {
-    width: auto !important;
-  }
-
-  .rest-icon li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .chef-image p {
-    font-size: 18px !important;
-    text-align: left;
-  }
-
-  .chef-image-one {
-    text-align: center;
-  }
-
-  .coming-soon {
-    padding: 100px 0 0 0;
-  }
-
-  .coming-soon h1 {
-    margin: 5% 10% 0 10% !important;
-  }
-
-  .coming-soon p {
-    font-size: 18px;
-    margin: 3% 15% !important;
-  }
-
-  .coming-soon .row img {
-    width: 150px !important;
-  }
-
-  .base-footer ul li {
-    margin: 0 10px
-  }
-
-
-}
-
-@media only screen and (max-width: 669px) {
-
-  nav {
-    padding: 25px 43px;
-  }
-
-  .landing-text h1 {
-    font-size: 50px;
-  }
-
-  .base-footer {
-    flex-direction: column !important;
-  }
-
-  .chef-image-one,
-  .landingimage.one {
-    display: block;
-    /* margin: 10% auto; */
-    text-align: center;
-  }
-
-  .chef-image,
-  .landingimage {
-    display: none;
-
-  }
-
-  .customer-restaurants img {
-    width: 450px;
-    margin-bottom: 5%;
-  }
-
-
-  hr,
-  .customer-hr {
-    left: -50px
-  }
-
-  .cust-desc,
-  .rest-icon li div.aos-init.aos-animate p span {
-    font-size: 20px !important;
-  }
-
-  .rest-icon li .steps {
-    width: 71px;
-    height: 71px;
-    margin-right: 30px;
-  }
-
-  .rest-icon li img {
-    width: 50px;
-    height: auto;
-  }
-
-  h3,
-  .cust-desc {
-    text-align: center;
-  }
-
-  .footer {
-    height: auto;
-  }
-
-  .base-footer {
-    width: auto;
-  }
-
-  .base-footer img,
-  .base-footer p {
-    margin: 0 0 5% 0;
-    font-size: 20px;
-  }
-
-  .base-footer ul li {
-    margin: 0 40px;
-  }
-
-}
-
-@media only screen and (max-width: 571px) {
-
-
-  .money,
-  .location,
-  .rest-icon li div p {
-    width: 330px !important;
-  }
-
-  hr,
-  .customer-hr {
-    left: -34px;
-  }
-
-  .coming-soon p {
-    margin: 8% !important;
-  }
-
-  .base-footer ul li {
-    margin: 0 32px;
-  }
-}
-
-@media only screen and (max-width: 525px) {
-
-  .landing-text p,
-  col p {
-    font-size: 18px;
-    margin-top: 3%
-  }
-
-  .landing-page .row img,
-  .nationality img,
-  .coming-soon .row img {
-    width: 152px;
-  }
-
-  .box {
-    width: 331px;
-    height: 330px;
-    margin: 29px 10px;
-  }
-
-  h2 {
-    font-size: 32px !important;
-  }
-
-  .customer-restaurants img {
-    width: 378px;
-  }
-
-  .rest-icon li .steps {
-    width: 60px;
-    height: 60px;
-  }
-
-  .rest-icon li img {
-    width: 40px;
-  }
-
-  .money,
-  .location,
-  .rest-icon li div p {
-    width: 300px !important;
-  }
-
-  hr,
-  .customer-hr {
-    left: -44px;
-  }
-}
-
-@media only screen and (max-width: 426px) {
-  #mobile {
-    display: block;
-    font-size: 30px;
-}
-#navlinks button {
-  width: 175px;
-  height: 75px;
-}
-select {
-  font-size: 20px;
-  margin: 10px 0;
-}
-  .landing-text {
-    margin: 30% 0 5% 0;
-    text-align: center;
-  }
-
-  .landing-text p,
-  col p {
-    font-size: 16px;
-    padding: 0 46px;
-    width: auto;
-  }
-
-  .landing-text h1 {
-    font-size: 48px;
-  }
-
-  .landingimage img {
-    width: 329.26px;
-  }
-
-
-
-  .nationality img {
-    width: 120px;
-  }
-
-  .nationality {
-    height: 109.83px;
-  }
-
-  h2 {
-    font-size: 30px !important;
-    margin: 0 !important;
-    text-align: center;
-  }
-
-  .coming-soon h1,
-  h3 {
-    font-size: 20px !important;
-    margin: 0 !important;
-    text-align: center;
-  }
-
-  .box img {
-    width: 82.45px;
-    /* height: 82.45px; */
-  }
-
-  .box {
-    width: 343px;
-    height: 336.85px;
-    margin: 22px auto;
-    box-shadow: none;
-    padding: 15px;
-  }
-
-  .services p,
-  .cust-rest div p {
-    font-size: 18px !important;
-    line-height: normal;
-  }
-
-  .customer-restaurants {
-    padding: 50px 0;
-  }
-
-  .cust-desc,
-  .rest-icon li div.aos-init.aos-animate p span {
-    font-size: 15px !important;
-  }
-
-  .customer-hr,
-  hr {
-    left: -95px;
-  }
-
-  .rest-icon li {
-    margin: 5% 0;
-  }
-
-  .customer-restaurants img {
-    width: 348px;
-    margin: 5% 0;
-  }
-
-  .chef-image p {
-    font-size: 14px;
-    margin: 0 210px;
-    text-align: left;
-  }
-
-  .coming-soon {
-    padding: 100px 0 0 0;
-  }
-
-  .coming-soon p {
-    font-size: 14px;
-    margin: 5% 8% !important;
-  }
-
-  .coming-soon .row img {
-    width: 120px !important;
-  }
-
-  #start div img {
-    width: 30% !important;
-  }
-
-  .footer {
-    height: auto;
-    padding: 0;
-  }
-
-  .footer-content p {
-    font-size: 18px !important;
-  }
-
-  .base-footer img {
-    margin: 0 0 5% 0;
-    width: 20%;
-  }
-
-  .base-footer {
-    width: auto;
-  }
-
-  .base-footer p,
-  .base-footer ul {
-    margin: 5%;
-
-    letter-spacing: 0.1em;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .landing-text h1 {
-    font-size: 38px;
-  }
-
-  .box {
-    width: 321px;
-    height: 330px;
-  }
-
-  .customer-restaurants img {
-    width: 301px;
-  }
-
-  .landingimage {
-    width: 350px;
-    height: 260px;
-  }
-
-  .customer-hr,
-  hr {
-    left: -85px;
-    /* width: 300px; */
-  }
-
-  .rest-icon li .steps {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-  }
-
-  .rest-icon li img {
-    width: 36px;
-    height: auto;
-  }
-
-  .cust-desc {
-    text-align: center;
-  }
-
-  .cust-rest div p {
-    font-size: 14px !important;
-  }
-
-  .money,
-  .location,
-  .rest-icon li div p {
-    width: 250px !important;
-  }
-
-  .footer-content p {
-    font-size: 16px !important;
-  }
-
-  .base-footer ul li {
-    margin: 0 25px;
-  }
-
-}
-
-@media only screen and (max-width: 320px) {
-
-
-  .landing-text h1 {
-    font-size: 30px;
-  }
-
-  .landingimage img {
-    width: 280px;
-  }
-
-  .landing-text p,
-  col p {
-    padding: 0 20px;
-    font-size: 14px;
-  }
-
-  .landing-page .row img,
-  .nationality img,
-  .coming-soon .row img {
-    width: 130px;
-  }
-
-  h2 {
-    font-size: 28px !important;
-  }
-
-  .box {
-    width: 260px;
-    height: 270px;
-  }
-
-  .box img {
-    width: 70px;
-    /* height: auto; */
-  }
-
-  .landingimage {
-    width: 280px;
-    height: 200px;
-  }
-
-  .customer-restaurants img {
-    width: 260px;
-  }
-
-  .rest-icon {
-    align-items: center;
-  }
-
-  .rest-icon li .steps {
-    width: 50px;
-    height: 50px;
-  }
-
-  .rest-icon li img {
-    width: 30px;
-  }
-
-
-  .money,
-  .location,
-  .rest-icon li div p {
-    width: 190px !important;
-  }
-
-  .customer-hr,
-  hr {
-    left: -83px;
-  }
-
-  .coming-soon .row img {
-    width: 128px !important;
-  }
-
-  .rest-icon li div.aos-init.aos-animate p span {
-    font-size: 14px !important;
-  }
-
-  .footer-content p {
-    font-size: 14px !important;
-  }
-
-  .base-footer ul li svg {
-    width: 20px;
-  }
-
-  .base-footer ul li {
-    margin: 0 20px;
-  }
-
 }
