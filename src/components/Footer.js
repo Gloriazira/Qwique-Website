@@ -44,12 +44,20 @@ const Footer = () => {
                     </p>
                 </div>
 
+                <div style={{ borderTop: "2px solid #F4F4F4 ", margin: "2% 10%" }}></div>
+
+                {/* <hr style={{
+                    color: '#000000',
+                    backgroundColor: '#000000',
+                    height: .5,
+                    borderColor: '#000000'
+                }} /> */}
 
 
-                <div style={myRow} className="base-footer">
+                <div className="base-footer">
                     <img src={logo} alt="" />
 
-                    <p>{i18next.t('copy_right')}</p>
+                    <p style={{marginLeft: "6%"}}>{i18next.t('copy_right')}</p>
 
                     <ul style={myRow}>
                         <li><FaFacebookF size={25} /> </li>

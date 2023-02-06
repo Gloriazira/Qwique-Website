@@ -39,7 +39,7 @@ const comingSoon = () => {
                         {i18next.t('coming_soon')}
                     </h2>
 
-                    <p style={{marginBottom: "4%", letterSpacing: "-0.01em"}}>
+                    <p style={{marginBottom: "4%", letterSpacing: "-0.01em", textAlign: "center"}}>
                         {i18next.t('coming_soon_description_one')} {<br />}
                         {i18next.t('coming_soon_description_two')}
                     </p>

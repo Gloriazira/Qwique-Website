@@ -45,7 +45,7 @@ const Services = () => {
         <div className="services" >
                 <div style={myColumn}>
                     <h2 style={myHeadertwo}>{i18next.t('what_we_offer')}</h2>
-                    <div className="list-of-services" style={{ margin: '5% auto' }} >
+                    <div className="list-of-services">
 
                         <Row style={myRow}>
                             <Col className="box" style={myColumn} data-aos="fade-right" data-aos-duration="2000">

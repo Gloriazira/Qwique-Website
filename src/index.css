@@ -282,10 +282,9 @@ select {
 }
 
 .footer {
-  overflow-y: hidden;
-  padding: 60px 0;
-  height: 250px;
-
+  padding: 30px 0;
+  /* height: 300px; */
+  margin-top: 2%;
   background: #FAFAFA;
 }
 
@@ -298,8 +297,8 @@ select {
 
 .base-footer {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 800px;
 }
 
 /* .base-footer {
