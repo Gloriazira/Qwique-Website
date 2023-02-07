@@ -24,7 +24,7 @@ const comingSoon = () => {
 
     
     const comingSoon = {
-        margin: "5% 0 3% 0",
+        margin: "10% 0 3% 0",
         textAlign: "center",
         
     }

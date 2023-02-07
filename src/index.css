@@ -452,6 +452,9 @@ background-position: center center;
   .coming-soon p {
     width: 474px;
   }
+  .coming-soon h2{
+    margin: 12% 0 3% 0 !important;
+  }
 
   .hr {
     margin: 2% 6%;
@@ -603,6 +606,10 @@ background-position: center center;
     width: 420px;
   }
 
+  .coming-soon h2{
+    margin: 15% 0 3% 0 !important;
+  }
+
   .base-footer {
     padding: 0 45px;
   }
@@ -648,6 +655,10 @@ background-position: center center;
     width: 50% !important;
   }
 
+  .coming-soon h2{
+    margin: 18% 0px 3% 0px !important;
+  }
+
   .base-footer p,
   .base-footer img,
   .base-footer ul {
@@ -663,6 +674,9 @@ background-position: center center;
 }
 
 @media only screen and (max-width: 425px) {
+  .logo img{
+    width: 100px;
+  }
   h3 {
     font-size: 24px !important;
     margin: 3% 0 0 0;
@@ -717,7 +731,12 @@ background-position: center center;
   .coming-soon p {
     width: 360px;
   }
-
+  .coming-soon h2{
+    margin: 25% 0px 3% 0px !important;
+  }
+.base-footer p{
+  text-align: center;
+}
   .base-footer ul li {
     margin: 0 35px;
   }
