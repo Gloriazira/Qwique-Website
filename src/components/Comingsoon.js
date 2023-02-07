@@ -40,12 +40,12 @@ const comingSoon = () => {
                     </h2>
 
                     <p style={{marginBottom: "4%", letterSpacing: "-0.01em", textAlign: "center"}}>
-                        {i18next.t('coming_soon_description_one')} {<br />}
-                        {i18next.t('coming_soon_description_two')}
+                        {i18next.t('coming_soon_description_one')}
+
                     </p>
                     <img src={phone} alt="" style={{ width: "20%" }} data-aos="zoom-in" data-aos-duration="2000" />
                     <div className="row" >
-                        <img src={googleStore} style={{ width: "254.26px", margin:"0 10px"}} alt="" ClassName="play-store" />
+                        <img src={googleStore} style={{ width: "254.26px", margin:"0 10px"}} alt="" className="play-store" />
 
                         <img src={appleStore} style={{ width: "254.26px", margin:"0 10px" }} alt="" ClassName="play-store" />
 

@@ -29,7 +29,7 @@ const nationality = () => {
     return (
         <div className="nationality" style={myRow}>
                 <img src={nigeria} alt="" className="country" style={myImage}/>
-                <img src={cameroon} alt="" ClassName="country" style={myImage}/>
+                <img src={cameroon} alt="" className="country" style={myImage}/>
         </div>
     );
 }

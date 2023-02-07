@@ -16,6 +16,7 @@ class Navbar extends Component {
     state = {clicked: false};
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
+        console.log();
     }
 
     render() {
@@ -31,7 +32,7 @@ class Navbar extends Component {
 
         return (
             <nav style={myStyle}>
-                <div ClassName="logo">
+                <div className="logo">
                     <img src={logo} alt="logo" />
                 </div>
 
@@ -50,12 +51,12 @@ class Navbar extends Component {
                         </li>
 
                         <li>
-                            <AnchorLink href='#start'><button ClassName="btn">{i18next.t('get_started')}</button></AnchorLink>
+                            <AnchorLink href='#start'><button className="btn">{i18next.t('get_started')}</button></AnchorLink>
                         </li>
                     </ul>
                 </div>
-                <div id='mobile' onClick={this.handleClick}>
-                    <i id='bar' className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <div id="mobile" onClick={this.handleClick}>
+                    <i id="bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
             </nav>
         );

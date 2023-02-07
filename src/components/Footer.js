@@ -44,7 +44,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div style={{ borderTop: "2px solid #F4F4F4 ", margin: "2% 10%" }}></div>
+                <div className='hr' style={{ borderTop: "2px solid #F4F4F4 ", margin: "2% 10%" }}></div>
 
                 {/* <hr style={{
                     color: '#000000',
@@ -63,7 +63,7 @@ const Footer = () => {
                         <li><FaFacebookF size={25} /> </li>
                         <li><FaTwitter size={25} /> </li>
                         <li><FaInstagram size={25} /> </li>
-                        <li><FaLinkedinIn size={25} /></li>
+                        <li><a href="http://http://linkedin.com/company/qwiquenq" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={25} /></a></li>
                     </ul>
 
                 </div>

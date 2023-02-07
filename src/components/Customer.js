@@ -39,9 +39,9 @@ const Restaurant = () => {
                     <div>
                         <h3>{i18next.t('for_customers')}</h3>{<br />}
 
-                        {/* <div className="chef-image-one" data-aos="zoom-in" data-aos-duration="3000">
+                        <div className="chef-image-one customer" data-aos="zoom-in" data-aos-duration="3000">
                             <img src={customer} alt="" />
-                        </div> */}
+                        </div>
 
                         <p className='cust-desc'>{i18next.t('for_customers_description')}</p>
                         <div style={myRow}>
@@ -79,7 +79,7 @@ const Restaurant = () => {
                         </div>
                     </div>
 
-                    <div className="chef-image" data-aos="zoom-in" data-aos-duration="3000">
+                    <div className="chef-image customer" data-aos="zoom-in" data-aos-duration="3000">
                         <img src={customer} alt="" />
                     </div>
 
