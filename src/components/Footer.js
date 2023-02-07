@@ -60,9 +60,9 @@ const Footer = () => {
                     <p style={{marginLeft: "6%"}}>{i18next.t('copy_right')}</p>
 
                     <ul style={myRow}>
-                        <li><FaFacebookF size={25} /> </li>
-                        <li><FaTwitter size={25} /> </li>
-                        <li><FaInstagram size={25} /> </li>
+                        <li><a href="https://www.facebook.com/QwiqueHQ?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><FaFacebookF size={25} /> </a></li>
+                        <li><a href="https://twitter.com/Qwique_HQ?t=xwD-J4j1xhzbvvWBW3IzGQ&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter size={25} /></a> </li>
+                        <li><a href="https://instagram.com/qwiquehq?igshid=OGQ2MjdiOTE=" target="_blank" rel="noopener noreferrer"><FaInstagram size={25} /></a></li>
                         <li><a href="http://http://linkedin.com/company/qwiquenq" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={25} /></a></li>
                     </ul>
 
