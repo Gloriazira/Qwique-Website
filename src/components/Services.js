@@ -1,8 +1,4 @@
 // import limage from '../assets/limage.png';
-import googleStore from '../assets/googleps.png';
-import appleStore from '../assets/appleps.png';
-import nigeria from '../assets/nigeria.png';
-import cameroon from '../assets/cameroon.png';
 import easy from '../assets/wwo-easy.png';
 import fast from '../assets/wwo-fast.png';
 import quality from '../assets/wwo-quality.png';

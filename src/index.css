@@ -141,11 +141,11 @@ select {
   color: #FF7011;
 }
 
-.hamburger-toggle {
+/* .hamburger-toggle {
   cursor: pointer;
   color: #FF7011;
   display: none;
-}
+} */
 
 .landing-page {
   padding-top: 8%;
@@ -263,7 +263,7 @@ select {
 
 
 .box:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transform: scale(1.08, 1.08) !important;
   transition: all 0.7s ease-in-out !important;
 }
@@ -464,6 +464,7 @@ background-position: center center;
 
 
 @media only screen and (max-width: 769px) {
+  
 
   #navlinks {
     width: 100%;
@@ -488,7 +489,7 @@ background-position: center center;
   }
 
   #mobile {
-    display: block;
+    display: block ;
     font-size: 35px;
   }
 

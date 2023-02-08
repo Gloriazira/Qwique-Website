@@ -5,6 +5,7 @@ import App from './App';
 import axios from 'axios';
 import './i18n';
 import i18next from 'i18next';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const lang = localStorage.getItem('lang') || 'en';

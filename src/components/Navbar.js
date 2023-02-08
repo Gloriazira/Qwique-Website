@@ -1,66 +1,69 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/Logo.png';
 import { IoIosGlobe } from "react-icons/io";
 import i18next from 'i18next';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-// import {IoIosMenu } from "react-icons/io";
-// import {IoIosClose } from "react-icons/io";
-// const Navbar = () => {
+const Navbar = () => {
+    const [clicked, setClicked] = useState(false);
 
-class Navbar extends Component {
-    change(option) {
+    const change = (option) => {
         localStorage.setItem('lang', option.target.value);
         window.location.reload();
-    }
-    state = {clicked: false};
-    handleClick = () => {
-        this.setState({clicked: !this.state.clicked})
-        console.log();
-    }
+    };
 
-    render() {
-        const myStyle = {
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-        };
-        const lang = localStorage.getItem('lang') || 'en';
+    const handleClick = () => {
+        setClicked(!clicked);
+    };
 
-        
+    const closeMobileMenu = () => setClicked(false);
 
-        return (
-            <nav style={myStyle}>
-                <div className="logo">
-                    <img src={logo} alt="logo" />
-                </div>
+    const myStyle = {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+    };
+    const lang = localStorage.getItem('lang') || 'en';
 
-                <div >
-                    <ul className={this.state.clicked ? "#navlinks active" : "#navlinks"} id="navlinks" style={myStyle}>
-                        <li style={myStyle}>
-                            <IoIosGlobe size={25} />
-                            <form>
-                                <select value={lang} onChange={this.change}>
-                                    <option value="en">English</option>
-                                    <option value="fr">Français</option>
+    return (
+        <nav style={myStyle}>
+            <div className="logo">
+                <img src={logo} alt="logo" />
 
 
-                                </select>
-                            </form>
-                        </li>
+            </div>
 
-                        <li>
-                            <AnchorLink href='#start'><button className="btn">{i18next.t('get_started')}</button></AnchorLink>
-                        </li>
-                    </ul>
-                </div>
-                <div id="mobile" onClick={this.handleClick}>
-                    <i id="bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
-                </div>
-            </nav>
-        );
-    }
-}
+            <div>
+                <ul className={clicked ? "#navlinks active" : "#navlinks"} id="navlinks" style={myStyle}>
+                    <li style={myStyle}>
+                        <IoIosGlobe size={25} />
+                        <form>
+                            <select value={lang} onChange={change}>
+                                <option value="en">English</option>
+                                <option value="fr">Français</option>
+                            </select>
+                        </form>
+                    </li>
+
+                    <li>
+                        <AnchorLink href='#start'>
+                            <button className="btn" onClick={closeMobileMenu}>{i18next.t('get_started')}</button>
+                        </AnchorLink>
+                    </li>
+                </ul>
+            </div>
+            <div id="mobile" onClick={handleClick}>
+
+                <FontAwesomeIcon icon={clicked ? faTimes : faBars} className='bar' />
+
+
+
+            </div>
+        </nav>
+    );
+};
 
 export default Navbar;
