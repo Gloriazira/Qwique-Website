@@ -26,12 +26,17 @@ const Restaurant = () => {
         margin: "20% 0"
     }
 
+    const myBg = {
+        background: "#FAFAFA",
+
+    }
+
 
 
 
     return (
         <div>
-            <div className="customer-restaurants">
+            <div className="customer-restaurants" style={myBg}>
                 <h2>{i18next.t('how_we_work')}</h2>
 
                 <div className="cust-rest" style={myRow}>
