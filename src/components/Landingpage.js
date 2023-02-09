@@ -26,7 +26,7 @@ const Mainbody = () => {
 
 
     return (
-        <div>
+        <div id='home'>
             <div className="container landing-page" style={myRow}>
                 <div className="landing-text" >
 
