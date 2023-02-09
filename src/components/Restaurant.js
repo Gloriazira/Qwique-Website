@@ -1,6 +1,6 @@
 // import limage from '../assets/limage.png';
 import chef from '../assets/restaurant.png';
-import RestaurantIcon from '../assets/customer-icons.svg';
+import RestaurantIcon from '../assets/restaurants-icon.svg';
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -65,7 +65,7 @@ const Customer = () => {
                     </div>
 
                     <p className='cust-desc'>{i18next.t('for_restaurants_description')}</p>
-                    <div style={myRow}>
+                    <div style={myRow} className="restaurant-icon">
                         <img src={RestaurantIcon} alt="" className='icons' style={{ margin: "0 50px 0 0" }} />
                         <ul className='rest-icon'>
                             <li data-aos="fade-right"

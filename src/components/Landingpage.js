@@ -39,7 +39,7 @@ const Mainbody = () => {
                         {/* <img src={limage} alt="" className="limage" /> */}
                     </div>
                     <p data-aos="fade-up" data-aos-duration="2200" style={{
-                        width: "523px",
+                        width: "523px", margin: "20px 0"
                     }}> {i18next.t('header_description')}</p>
                     <h6>{i18next.t('coming_soon_on')}</h6>
                     <div className="row" style={{marginBottom: "10%"}}>

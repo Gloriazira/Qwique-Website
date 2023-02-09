@@ -44,7 +44,7 @@ const Restaurant = () => {
                         </div>
 
                         <p className='cust-desc'>{i18next.t('for_customers_description')}</p>
-                        <div style={myRow}>
+                        <div style={myRow} className="customer-icon">
                             <img src={CustomerIcon} alt="" className='icons' style={{ margin: "0 50px 0 0" }} />
                             <ul className='rest-icon'>
                                 <li data-aos="fade-right"
