@@ -515,7 +515,7 @@ background-position: center center;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 821px) {
   .landing-page {
     margin-top: 8%;
   }
